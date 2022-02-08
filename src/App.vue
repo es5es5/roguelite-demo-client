@@ -7,7 +7,10 @@
 
 <script lang="ts">
 export default {
-  name: 'App'
+  name: 'App',
+  created () {
+    console.log(this.$store.state.a)
+  }
 }
 </script>
 
