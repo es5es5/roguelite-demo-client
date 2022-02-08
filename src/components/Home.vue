@@ -1,13 +1,10 @@
 <template>
-  <div>
-    Hi
-    <router-view></router-view>
-  </div>
+  <div>Home</div>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'App'
+  name: 'Home'
 }
 </script>
 
