@@ -9,7 +9,6 @@
 export default {
   name: 'App',
   created () {
-    console.log(this.$store.state.a)
   }
 }
 </script>
