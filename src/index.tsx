@@ -1,14 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-function tick() {
-  const element = (
-    <div>
-      <h1>Hello, world!</h1>
-      <h2>It is {new Date().toLocaleTimeString()}.</h2>
-    </div>
-  );
-  ReactDOM.render(element, document.getElementById('root'));
+function Welcome(props: any) {
+  return <h1>Hello, {props.name} {props.age}</h1>;
 }
 
-setInterval(tick, 1000);
+function App() {
+  return (
+    <div>
+      <Welcome name="Sara" />
+      <Welcome name="Cahal" />
+      <Welcome name="Edite" />
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <App></App>,
+  document.getElementById('root')
+);
